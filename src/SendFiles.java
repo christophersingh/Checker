@@ -44,7 +44,7 @@ public class SendFiles extends JFrame{
 		runtime = Runtime.getRuntime();
 		
 		try {
-			process = runtime.exec("rsync --progress --verbose --recursive --stats /Users/christophersingh/mnt/JSONVideo/275009 /Users/christophersingh/Snowball_Test_Code");
+			process = runtime.exec("rsync --progress --verbose --recursive --stats /Users/XXXXXXXXXXXXXXXX");
 			stdout = new BufferedReader(new InputStreamReader(process. getInputStream())); 
 			while ((output = stdout.readLine()) != null) { 
 				// Append the collected input into the message buffer 
@@ -73,7 +73,7 @@ public class SendFiles extends JFrame{
 		new SendFiles();
 		
 	    String command = "aws s3 cp /Users/christophersingh/trans2.log s3://snowball-transfer";
-		String command2 = "rsync --progress --verbose --recursive --stats /Users/christophersingh/mnt/JSONVideo/275009 /Users/christophersingh/Snowball_Test_Code";
+		String command2 = "rsync --progress --verbose --recursive --stats XXXXXXXXXXXXXXXXXXXXXXXX";
 		String command3 = "rsync --help";
 		
 		Scanner in = new Scanner(System.in);
