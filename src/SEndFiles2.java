@@ -96,7 +96,7 @@ public class SEndFiles2
      {
     	 
     	 try {
-    		 Connection myConnector = DriverManager.getConnection("jdbc:mysql://localhost:3306/FileDirectory?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false", "root", "Chris@164");
+    		 Connection myConnector = DriverManager.getConnection("jdbc:mysql://localhost:3306/FileDirectory?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false", "XXXXXXX", "XXXXXXX");
     		 Statement go = myConnector.createStatement();
     		 
     		 String sql = "Insert into FileInfo (MD5,File_Name,Source_Path,Size,TimeOfEntry)" +"VALUES (?,?,?,?,?)";
