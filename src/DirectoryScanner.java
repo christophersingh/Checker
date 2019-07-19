@@ -87,7 +87,7 @@ public class DirectoryScanner
      {
     	 
     	 try {
-    		 Connection myConnector = DriverManager.getConnection("jdbc:mysql://localhost:3306/FileDirectory?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false", "root", "Chris@164");
+    		 Connection myConnector = DriverManager.getConnection("jdbc:mysql://localhost:3306/FileDirectory?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false", "XXXXX", "XXXXX");
     		 Statement go = myConnector.createStatement();
     		 ResultSet myRs = go.executeQuery("select * from MD5_Info");
     		 
@@ -116,7 +116,7 @@ public class DirectoryScanner
     public static void main(String[] args) throws IOException, InterruptedException
     {
         // Provide full path for directory(change accordingly)  
-        String sourcePath = "/Users/christophersingh/mnt/JSONVideo/263741";
+        String sourcePath = "xxxxxxxxxxxxxxx";
                  
         // File object
         File directory = new File(sourcePath);
